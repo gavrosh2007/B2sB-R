@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emporium Cars | Авто с пробегом для бизнеса</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #B00000;
+      --secondary: #8B0000;
+      --accent: #FFD700;
+      --light: #FFF5F5;
+      --dark: #1A1A1A;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: var(--primary);
+      padding: 40px 0;
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      font-style: italic;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .contact-bar {
+      background: var(--dark);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .channel-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin: 50px 0;
+    }
+    .channel-card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border-top: 4px solid;
+    }
+    .channel-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: var(--secondary);
+      transform: translateY(-3px);
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      margin-top: 50px;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .channel-card {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-bar">
+    Телефон: 77 77 77 23 | Лимассол, Кипр
+  </div>
+
+  <header>
+    <div class="container">
+      <h1>EMPORIUM CARS</h1>
+      <p style="font-size: 1.3rem; margin-top: 10px;">Продажа авто с пробегом для бизнеса</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section style="padding: 60px 0;">
+      <h2 style="font-family: 'Montserrat'; text-align: center; font-size: 2.2rem;">Каналы продаж</h2>
+      
+      <div class="channel-cards">
+        <!-- Каршеринг -->
+        <div class="channel-card" style="border-color: #1A69D4;">
+          <h3 style="color: #1A69D4;">Каршеринг</h3>
+          <p>Пополнение парка автомобилей для аренды</p>
+          <a href="mailto:emporiumcarsrd@gmail.com" class="btn">Написать</a>
+        </div>
+
+        <!-- Страховые -->
+        <div class="channel-card" style="border-color: #E3001B;">
+          <h3 style="color: #E3001B;">Страховые компании</h3>
+          <p>Авто для программ Total Loss</p>
+          <a href="mailto:emporiumcarsag@gmail.com" class="btn">Написать</a>
+        </div>
+
+        <!-- Логистика -->
+        <div class="channel-card" style="border-color: #00A651;">
+          <h3 style="color: #00A651;">Курьерские службы</h3>
+          <p>Комплекты "авто + страховка"</p>
+          <a href="mailto:emporiumcarsrd@gmail.com" class="btn">Написать</a>
+        </div>
+      </div>
+
+      <div class="channel-cards">
+        <!-- Отели -->
+        <div class="channel-card" style="border-color: #FF9E1B;">
+          <h3 style="color: #FF9E1B;">Отели</h3>
+          <p>VIP-трансфер для гостей</p>
+          <a href="mailto:emporiumcarsag@gmail.com" class="btn">Написать</a>
+        </div>
+
+        <!-- Автошколы -->
+        <div class="channel-card" style="border-color: #7D3F98;">
+          <h3 style="color: #7D3F98;">Автошколы</h3>
+          <p>Обновление учебного парка</p>
+          <a href="mailto:emporiumcarsrd@gmail.com" class="btn">Написать</a>
+        </div>
+
+        <!-- Экспаты -->
+        <div class="channel-card" style="border-color: #0097A7;">
+          <h3 style="color: #0097A7;">Экспаты</h3>
+          <p>Пакет "Переезд на Кипр"</p>
+          <a href="mailto:emporiumcarsag@gmail.com" class="btn">Написать</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="padding: 60px 0; text-align: center; background: #F8F8F8; border-radius: 10px; margin: 50px 0;">
+      <h2 style="font-family: 'Montserrat'; font-size: 2rem;">Контакты</h2>
+      <p style="font-size: 1.2rem; margin: 20px 0 30px;">Для бизнес-запросов:</p>
+      <p><strong>Отдел развития:</strong> emporiumcarsrd@gmail.com</p>
+      <p><strong>Агентские продажи:</strong> emporiumcarsag@gmail.com</p>
+      <p style="margin-top: 30px;">Телефон: 77 77 77 23</p>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p style="font-size: 1.3rem; margin-bottom: 10px;">© 2023 Emporium Cars</p>
+      <p>Продажа автомобилей с пробегом</p>
+    </div>
+  </footer>
+</body>
+</html>
